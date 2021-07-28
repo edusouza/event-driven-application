@@ -1,0 +1,15 @@
+POST http://localhost:8080/empresa
+Content-Type: application/json
+
+{
+  "cnpj": "21674124000122",
+  "razaoSocial": "EDUARDO OLIVEIRA DE SOUZA",
+  "socios": [
+    {
+      "cpf": "00607865156",
+      "nome": "Eduardo Oliveira de Souza"
+    }
+  ]
+}
+
+###
