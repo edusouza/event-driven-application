@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationListener
 import org.springframework.stereotype.Component
 
 @Component
-class DeleteEmpresaEventListener(
+class DeleteCompanyEventListener(
     private val pubSubTemplate: PubSubTemplate,
     private val properties: EventsConfigurationProperties
 ) : ApplicationListener<AfterDeleteEvent>{
@@ -30,6 +30,6 @@ class DeleteEmpresaEventListener(
         )
 
     companion object {
-        val logger = LoggerFactory.getLogger(DeleteEmpresaEventListener::class.java)
+        val logger = LoggerFactory.getLogger(DeleteCompanyEventListener::class.java)
     }
 }

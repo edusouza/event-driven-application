@@ -1,0 +1,15 @@
+POST http://localhost:8080/company
+Content-Type: application/json
+
+{
+  "regNumber": "27727094000151",
+  "corporateName": "EMPRESA FICTÍCIA LTDA",
+  "partners": [
+    {
+      "itr": "51001960092",
+      "name": "FULANINHO DA SILVA"
+    }
+  ]
+}
+
+###

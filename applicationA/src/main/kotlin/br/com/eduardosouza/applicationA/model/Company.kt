@@ -4,9 +4,9 @@ import com.google.cloud.spring.data.datastore.core.mapping.Entity
 import org.springframework.data.annotation.Id
 
 @Entity
-data class Empresa(
+data class Company(
     @Id
-    val cnpj: String? = "",
-    val razaoSocial: String? = "",
-    val socios: List<Socio> = emptyList()
+    val regNumber: String? = "",
+    val corporateName: String? = "",
+    val partners: List<Partner> = emptyList()
 )

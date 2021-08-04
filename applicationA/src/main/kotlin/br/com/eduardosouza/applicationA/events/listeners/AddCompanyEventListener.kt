@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationListener
 import org.springframework.stereotype.Component
 
 @Component
-class AddEmpresaEventListener(
+class AddCompanyEventListener(
     private val pubSubTemplate: PubSubTemplate,
     private val properties: EventsConfigurationProperties
 ) : ApplicationListener<AfterSaveEvent>{
@@ -30,7 +30,7 @@ class AddEmpresaEventListener(
         )
 
     companion object {
-        val logger = LoggerFactory.getLogger(AddEmpresaEventListener::class.java)
+        val logger = LoggerFactory.getLogger(AddCompanyEventListener::class.java)
     }
 
 }
