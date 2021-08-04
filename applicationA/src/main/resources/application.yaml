@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    gcp:
+      datastore:
+        emulator:
+          enabled: true
+      pubsub:
+        emulator-host: "localhost:8085"
+
+management:
+  endpoint:
+    health:
+      show-details: always
+
+#application:
+#  events:
+#    company:
+#      pubsub:
+#        topic: "projects/<project_name>/topics/<topic_name>"
