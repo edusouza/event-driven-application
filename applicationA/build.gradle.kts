@@ -30,6 +30,7 @@ dependencies {
 	implementation("com.google.cloud:spring-cloud-gcp-starter-pubsub")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.testcontainers:junit-jupiter")
+	testImplementation("org.testcontainers:gcloud")
 }
 
 dependencyManagement {
